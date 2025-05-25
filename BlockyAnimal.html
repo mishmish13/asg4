@@ -1,0 +1,70 @@
+<!--
+Karina Tumko
+ktumko@ucsc.edu
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p id="performance">ms: 0 fps: 0</p>
+
+    <p>
+    <button type="button" id="normalOn">Normal ON</button>
+    <button type="button" id="normalOff">OFF</button>
+    </p>
+
+    <p>
+      light X <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+      light Y <input type="range" min="-250" max="250" value="100" class="slider" id="lightSlideY">
+      light Z <input type="range" min="-250" max="250" value="-200" class="slider" id="lightSlideZ">
+    <p>
+
+    <p>
+      Light R <input type="range" min="0" max="100" value="100" id="lightColorR">
+      Light G <input type="range" min="0" max="100" value="100" id="lightColorG">
+      Light B <input type="range" min="0" max="100" value="100" id="lightColorB">
+    </p>
+    <p>
+      <button type="button" id="toggleLightBtn">Toggle Lighting</button>
+    </p>
+    
+
+    <p>
+    Camera Angle <input type="range" min="0" max="360" value="5" class="slider" id="angleSlide">
+    <p>
+
+    <p id="dev-notes" style="color: black; font-family: monospace;">
+      <strong>Notes for Grader:</strong><br><br>
+      • <strong>Mouse Controls:</strong> Mouse drag rotation works. The original Q and E keys still work for rotation as well.<br><br>
+    
+      • <strong>Movement:</strong> The WASD keys allow basic movement.<br><br>
+    
+         </p>
+      
+
+
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+
+
+    <script src="BlockyAnimal.js"></script>
+  </body>
+</html>
